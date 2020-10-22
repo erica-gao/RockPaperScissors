@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Let's play a game!</title>
+	<script src="js/rsp.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<div class = "header">
+
+	<h1>Rock <span>|</span> Paper <span>|</span> Scissors<br></h1>
+
+	<h5 style="font-style: italic;">Angry Bird Version</h3>
+
+	<a href="#" style="font-size: 20px; color: #f5f5f5; border: 1px solid green;border-radius: 20px; background-color: #73AD21;" onclick="changeCharacters();">Switch Characters</a> 
+
+
+</div>
+
+
+<div class="container">
+	<div class="side_bar">
+		<div id="rules">
+			<p>Enjoy this classic Rock, Paper & Scissors game with a little splash of angry birds. Same game rules apply. Just click one character below to choose as your weapon, and computer will choose your competitor!</p>
+		</div>
+		
+
+		<div class="counter">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Win</th>
+						<th>Loss</th>
+						<th>Tie</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>You</td>
+						<td id="user_win"></td>
+						<td id="user_loss"></td>
+						<td rowspan="2" id="tie"></td>
+
+					</tr>
+					<tr>
+						<td>Computer</td>
+						<td id="computer_win"></td>
+						<td id="computer_loss"></td>
+				
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+
+	<div id="rps_buttons">
+		<div class="rps_btn rock">
+			<p id="introduction">Hi I'm Rock!</p>
+		</div>
+		<div class="rps_btn paper">
+			<p id="introduction">Hi I'm Paper!</p>
+		</div>
+		
+		<div class="rps_btn scissors">
+			<p id="introduction">Hi I'm Scissors!</p>
+		</div>
+	</div>
+
+	<div id="rps_result" style="display: flex;">
+	</div>
+
+</div>
+
+<footer>Erica Gao &copy;</footer>
+
+</body>
+</html>

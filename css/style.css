@@ -1,0 +1,248 @@
+.header {
+	text-align: center;
+	color: #000000;
+	font-size: 30px;
+	font-family: 'Chilanka', regular;
+	
+}
+
+h5 {
+	margin: 1% auto;
+}
+
+h1 {
+	letter-spacing: 1px;
+	display: inline;
+}
+
+.counter {
+    margin-top: 45px;
+    margin-left: 0px;
+
+
+}
+
+table {
+	border-collapse: collapse;
+    width: 60%;
+	margin-left: 0px;
+	margin-right: auto;
+	height: 80%;
+
+
+}
+
+table, th, td {
+	border: 1px solid #fbb040;
+	border-width: medium;
+
+
+}
+
+th {
+	height: 30px;
+	text-align: center;
+	font-family: 'Chilanka', regular;
+	font-weight: 500;
+	color: #000000;
+
+
+}
+
+td {
+	height: 30px;
+	text-align: center;
+	font-family: 'Chilanka', regular;
+	color: #000000;
+
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+
+div{
+    
+    margin: 5% auto;
+    text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+    align-items: stretch;
+}
+
+.side_bar {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    background-color: #FFFFFF;
+    padding: 20px;
+    min-width: 100px;
+    width: 25%;
+    height: 350px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 30px;
+
+
+}
+
+#rules {
+    font-family: 'Chilanka', regular;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+	background-color: white;
+	background-image: url(../images/background.png);
+	background-size: auto 100%;
+	margin: 20px 20px;
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+
+
+#rps_buttons, #rps_result{
+	width: 70%;
+    min-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    height: 600px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Chilanka', cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+    flex-shrink: 0;
+   
+}
+
+div{
+    
+    margin:5% auto;
+    text-align: center;
+}
+
+.rps_btn{
+	display: inline-box;
+    width: 50px;
+    height: 100px;
+    background-repeat: no-repeat;
+    color: white;
+    margin: auto;
+    padding: 100px;
+    position: relative;
+}
+
+
+#introduction {
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute; 
+    top: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 20px;
+}
+
+.button_text {
+	height: 10px;
+}
+
+
+button {
+    border-radius: 200px 200px;
+    border-width: 0;
+    background-color: rgb(174,122,83);
+    color: #f5f5f5;
+    font-family: 'Chilanka', regular;
+    font-size: 30px;
+}
+
+.rock {
+	background-image:url(../images/rock.png);
+    transition: all 1s;
+    background-size: contain;
+}
+.paper {
+	background-image:url(../images/paper.png);
+    transition: all 1s;
+    background-size: contain;
+   
+}
+.scissors {
+	background-image:url(../images/scissors.png);
+    transition: all 1s;
+    background-size: contain;
+  
+}
+
+.rock:hover {
+	transform: rotate(-25deg);
+
+}
+
+.paper:hover {
+	transform: rotate(-25deg);
+
+}
+
+.scissors:hover {
+	transform: rotate(-25deg);
+
+}
+
+.rock:hover #introduction{
+    opacity: 1;
+
+}
+
+.paper:hover #introduction{
+    opacity: 1;
+    
+}
+
+.scissors:hover #introduction{
+    opacity: 1;
+    
+
+}
+
+#information {
+    opacity: 0;
+    transition: all 0.5s;
+    margin-bottom: 0;
+}
+
+
+
+.user:hover {
+	transform: rotate(-25deg);
+	transition: all 0.5s;
+}
+
+.user:hover #information{
+	opacity: 1;
+}
+
+
+
